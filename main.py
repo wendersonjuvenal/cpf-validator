@@ -2,7 +2,7 @@
 
 while True:
     cpf = input("CPF (only numbers): ")
-    if not len(cpf) == 11:
+    if len(cpf) != 11:
         print("Enter an 11-character CPF! ")
         continue
     break
