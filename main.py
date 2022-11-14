@@ -33,7 +33,4 @@ def dig11():
 conditions = (cpf[9]==dig10() and cpf[10]==dig11() and len(set(cpf))!=1)
 # (len(set(cpf)) != 1) - checks if the string doesn't have all the same values;
 
-if conditions:
-    print("Valid CPF")
-else:
-    print("Invalid CPF")
+print("Valid CPF" if conditions else "Invalid CPF")
